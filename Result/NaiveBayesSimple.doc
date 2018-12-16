@@ -1,0 +1,548 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     Zoo-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    101
+Attributes:   17
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              type
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Naive Bayes (simple)
+
+Class aardvarkFamily: P(C) = 0.38888889
+
+Attribute hair
+0	1	
+0.06976744	0.93023256	
+
+Attribute feathers
+0	1	
+0.97674419	0.02325581	
+
+Attribute eggs
+0	1	
+0.95348837	0.04651163	
+
+Attribute milk
+0	1	
+0.02325581	0.97674419	
+
+Attribute airborne
+0	1	
+0.93023256	0.06976744	
+
+Attribute aquatic
+0	1	
+0.8372093 	0.1627907 	
+
+Attribute predator
+0	1	
+0.46511628	0.53488372	
+
+Attribute toothed
+0	1	
+0.04651163	0.95348837	
+
+Attribute backbone
+0	1	
+0.02325581	0.97674419	
+
+Attribute breathes
+0	1	
+0.02325581	0.97674419	
+
+Attribute venomous
+0	1	
+0.97674419	0.02325581	
+
+Attribute fins
+0	1	
+0.88372093	0.11627907	
+
+Attribute legs
+0	2	4	5	6	8	
+0.08510638	0.17021277	0.68085106	0.0212766 	0.0212766 	0.0212766 	
+
+Attribute tail
+0	1	
+0.1627907 	0.8372093 	
+
+Attribute domestic
+0	1	
+0.79069767	0.20930233	
+
+Attribute catsize
+0	1	
+0.23255814	0.76744186	
+
+
+
+Class bassFamily: P(C) = 0.12962963
+
+Attribute hair
+0	1	
+0.93333333	0.06666667	
+
+Attribute feathers
+0	1	
+0.93333333	0.06666667	
+
+Attribute eggs
+0	1	
+0.06666667	0.93333333	
+
+Attribute milk
+0	1	
+0.93333333	0.06666667	
+
+Attribute airborne
+0	1	
+0.93333333	0.06666667	
+
+Attribute aquatic
+0	1	
+0.06666667	0.93333333	
+
+Attribute predator
+0	1	
+0.33333333	0.66666667	
+
+Attribute toothed
+0	1	
+0.06666667	0.93333333	
+
+Attribute backbone
+0	1	
+0.06666667	0.93333333	
+
+Attribute breathes
+0	1	
+0.93333333	0.06666667	
+
+Attribute venomous
+0	1	
+0.86666667	0.13333333	
+
+Attribute fins
+0	1	
+0.06666667	0.93333333	
+
+Attribute legs
+0	2	4	5	6	8	
+0.73684211	0.05263158	0.05263158	0.05263158	0.05263158	0.05263158	
+
+Attribute tail
+0	1	
+0.06666667	0.93333333	
+
+Attribute domestic
+0	1	
+0.86666667	0.13333333	
+
+Attribute catsize
+0	1	
+0.66666667	0.33333333	
+
+
+
+Class chickenFamily: P(C) = 0.19444444
+
+Attribute hair
+0	1	
+0.95454545	0.04545455	
+
+Attribute feathers
+0	1	
+0.04545455	0.95454545	
+
+Attribute eggs
+0	1	
+0.04545455	0.95454545	
+
+Attribute milk
+0	1	
+0.95454545	0.04545455	
+
+Attribute airborne
+0	1	
+0.22727273	0.77272727	
+
+Attribute aquatic
+0	1	
+0.68181818	0.31818182	
+
+Attribute predator
+0	1	
+0.54545455	0.45454545	
+
+Attribute toothed
+0	1	
+0.95454545	0.04545455	
+
+Attribute backbone
+0	1	
+0.04545455	0.95454545	
+
+Attribute breathes
+0	1	
+0.04545455	0.95454545	
+
+Attribute venomous
+0	1	
+0.95454545	0.04545455	
+
+Attribute fins
+0	1	
+0.95454545	0.04545455	
+
+Attribute legs
+0	2	4	5	6	8	
+0.03846154	0.80769231	0.03846154	0.03846154	0.03846154	0.03846154	
+
+Attribute tail
+0	1	
+0.04545455	0.95454545	
+
+Attribute domestic
+0	1	
+0.81818182	0.18181818	
+
+Attribute catsize
+0	1	
+0.68181818	0.31818182	
+
+
+
+Class clamFamily: P(C) = 0.10185185
+
+Attribute hair
+0	1	
+0.91666667	0.08333333	
+
+Attribute feathers
+0	1	
+0.91666667	0.08333333	
+
+Attribute eggs
+0	1	
+0.16666667	0.83333333	
+
+Attribute milk
+0	1	
+0.91666667	0.08333333	
+
+Attribute airborne
+0	1	
+0.91666667	0.08333333	
+
+Attribute aquatic
+0	1	
+0.41666667	0.58333333	
+
+Attribute predator
+0	1	
+0.25      	0.75      	
+
+Attribute toothed
+0	1	
+0.91666667	0.08333333	
+
+Attribute backbone
+0	1	
+0.91666667	0.08333333	
+
+Attribute breathes
+0	1	
+0.66666667	0.33333333	
+
+Attribute venomous
+0	1	
+0.75      	0.25      	
+
+Attribute fins
+0	1	
+0.91666667	0.08333333	
+
+Attribute legs
+0	2	4	5	6	8	
+0.3125    	0.0625    	0.125     	0.125     	0.1875    	0.1875    	
+
+Attribute tail
+0	1	
+0.83333333	0.16666667	
+
+Attribute domestic
+0	1	
+0.91666667	0.08333333	
+
+Attribute catsize
+0	1	
+0.83333333	0.16666667	
+
+
+
+Class frogFamily: P(C) = 0.0462963 
+
+Attribute hair
+0	1	
+0.83333333	0.16666667	
+
+Attribute feathers
+0	1	
+0.83333333	0.16666667	
+
+Attribute eggs
+0	1	
+0.16666667	0.83333333	
+
+Attribute milk
+0	1	
+0.83333333	0.16666667	
+
+Attribute airborne
+0	1	
+0.83333333	0.16666667	
+
+Attribute aquatic
+0	1	
+0.16666667	0.83333333	
+
+Attribute predator
+0	1	
+0.33333333	0.66666667	
+
+Attribute toothed
+0	1	
+0.16666667	0.83333333	
+
+Attribute backbone
+0	1	
+0.16666667	0.83333333	
+
+Attribute breathes
+0	1	
+0.16666667	0.83333333	
+
+Attribute venomous
+0	1	
+0.66666667	0.33333333	
+
+Attribute fins
+0	1	
+0.83333333	0.16666667	
+
+Attribute legs
+0	2	4	5	6	8	
+0.1       	0.1       	0.5       	0.1       	0.1       	0.1       	
+
+Attribute tail
+0	1	
+0.66666667	0.33333333	
+
+Attribute domestic
+0	1	
+0.83333333	0.16666667	
+
+Attribute catsize
+0	1	
+0.83333333	0.16666667	
+
+
+
+Class fleaFamily: P(C) = 0.08333333
+
+Attribute hair
+0	1	
+0.5       	0.5       	
+
+Attribute feathers
+0	1	
+0.9       	0.1       	
+
+Attribute eggs
+0	1	
+0.1       	0.9       	
+
+Attribute milk
+0	1	
+0.9       	0.1       	
+
+Attribute airborne
+0	1	
+0.3       	0.7       	
+
+Attribute aquatic
+0	1	
+0.9       	0.1       	
+
+Attribute predator
+0	1	
+0.8       	0.2       	
+
+Attribute toothed
+0	1	
+0.9       	0.1       	
+
+Attribute backbone
+0	1	
+0.9       	0.1       	
+
+Attribute breathes
+0	1	
+0.1       	0.9       	
+
+Attribute venomous
+0	1	
+0.7       	0.3       	
+
+Attribute fins
+0	1	
+0.9       	0.1       	
+
+Attribute legs
+0	2	4	5	6	8	
+0.07142857	0.07142857	0.07142857	0.07142857	0.64285714	0.07142857	
+
+Attribute tail
+0	1	
+0.9       	0.1       	
+
+Attribute domestic
+0	1	
+0.8       	0.2       	
+
+Attribute catsize
+0	1	
+0.9       	0.1       	
+
+
+
+Class pitviperFamily: P(C) = 0.05555556
+
+Attribute hair
+0	1	
+0.85714286	0.14285714	
+
+Attribute feathers
+0	1	
+0.85714286	0.14285714	
+
+Attribute eggs
+0	1	
+0.28571429	0.71428571	
+
+Attribute milk
+0	1	
+0.85714286	0.14285714	
+
+Attribute airborne
+0	1	
+0.85714286	0.14285714	
+
+Attribute aquatic
+0	1	
+0.71428571	0.28571429	
+
+Attribute predator
+0	1	
+0.28571429	0.71428571	
+
+Attribute toothed
+0	1	
+0.28571429	0.71428571	
+
+Attribute backbone
+0	1	
+0.14285714	0.85714286	
+
+Attribute breathes
+0	1	
+0.28571429	0.71428571	
+
+Attribute venomous
+0	1	
+0.57142857	0.42857143	
+
+Attribute fins
+0	1	
+0.85714286	0.14285714	
+
+Attribute legs
+0	2	4	5	6	8	
+0.36363636	0.09090909	0.27272727	0.09090909	0.09090909	0.09090909	
+
+Attribute tail
+0	1	
+0.14285714	0.85714286	
+
+Attribute domestic
+0	1	
+0.85714286	0.14285714	
+
+Attribute catsize
+0	1	
+0.71428571	0.28571429	
+
+
+
+Time taken to build model: 0 seconds
+
+=== Predictions on test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:? 1:aardvarkFamily       1 
+        2        1:? 3:chickenFamily       1 
+        3        1:? 7:pitviperFamily       0.974 
+        4        1:? 2:bassFamily       0.999 
+        5        1:? 5:frogFamily       0.732 
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         aardvarkFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         bassFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         chickenFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         clamFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         frogFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         fleaFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         pitviperFamily
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+=== Confusion Matrix ===
+
+ a b c d e f g   <-- classified as
+ 0 0 0 0 0 0 0 | a = aardvarkFamily
+ 0 0 0 0 0 0 0 | b = bassFamily
+ 0 0 0 0 0 0 0 | c = chickenFamily
+ 0 0 0 0 0 0 0 | d = clamFamily
+ 0 0 0 0 0 0 0 | e = frogFamily
+ 0 0 0 0 0 0 0 | f = fleaFamily
+ 0 0 0 0 0 0 0 | g = pitviperFamily
+

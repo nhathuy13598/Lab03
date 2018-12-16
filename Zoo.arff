@@ -1,0 +1,140 @@
+% ============> Khai bao
+@relation Zoo
+
+
+@attribute 'animal name' {aardvark,antelope,bass,bear,boar,buffalo,calf,carp,catfish,cavy,cheetah,chicken,chub,clam,crab,crayfish,crow,deer,dogfish,dolphin,dove,duck,elephant,flamingo,flea,frog,fruitbat,giraffe,girl,gnat,goat,gorilla,gull,haddock,hamster,hare,hawk,herring,honeybee,housefly,kiwi,ladybird,lark,leopard,lion,lobster,lynx,mink,mole,mongoose,moth,newt,octopus,opossum,oryx,ostrich,parakeet,penguin,pheasant,pike,piranha,pitviper,platypus,polecat,pony,porpoise,puma,pussycat,raccoon,reindeer,rhea,scorpion,seahorse,seal,sealion,seasnake,seawasp,skimmer,skua,slowworm,slug,sole,sparrow,squirrel,starfish,stingray,swan,termite,toad,tortoise,tuatara,tuna,vampire,vole,vulture,wallaby,wasp,wolf,worm,wren}
+
+@attribute hair {0,1} 
+@attribute feathers {0,1}
+@attribute eggs {0,1}
+@attribute milk {0,1}
+
+@attribute airborne {0,1}
+
+@attribute aquatic {0,1}
+
+@attribute predator {0,1}
+
+@attribute toothed {0,1}
+
+@attribute backbone {0,1}
+
+@attribute breathes {0,1}
+
+@attribute venomous {0,1}
+
+@attribute fins {0,1}
+@attribute legs {0,2,4,5,6,8}
+
+@attribute tail {0,1}
+
+@attribute domestic {0,1}
+
+@attribute catsize {0,1}
+
+@attribute type {aardvarkFamily,bassFamily,chickenFamily,clamFamily,frogFamily,fleaFamily,pitviperFamily}
+
+% ======> Du lieu
+@data
+
+aardvark,1,0,0,1,0,0,1,1,1,1,0,0,4,0,0,1,aardvarkFamily
+antelope,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,aardvarkFamily
+bass,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,bassFamily
+bear,1,0,0,1,0,0,1,1,1,1,0,0,4,0,0,1,aardvarkFamily
+boar,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+buffalo,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,aardvarkFamily
+calf,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,aardvarkFamily
+carp,0,0,1,0,0,1,0,1,1,0,0,1,0,1,1,0,bassFamily
+catfish,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,bassFamily
+cavy,1,0,0,1,0,0,0,1,1,1,0,0,4,0,1,0,aardvarkFamily
+cheetah,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+chicken,0,1,1,0,1,0,0,0,1,1,0,0,2,1,1,0,chickenFamily
+chub,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,bassFamily
+clam,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,clamFamily
+crab,0,0,1,0,0,1,1,0,0,0,0,0,4,0,0,0,clamFamily
+crayfish,0,0,1,0,0,1,1,0,0,0,0,0,6,0,0,0,clamFamily
+crow,0,1,1,0,1,0,1,0,1,1,0,0,2,1,0,0,chickenFamily
+deer,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,aardvarkFamily
+dogfish,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,bassFamily
+dolphin,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,1,aardvarkFamily
+dove,0,1,1,0,1,0,0,0,1,1,0,0,2,1,1,0,chickenFamily
+duck,0,1,1,0,1,1,0,0,1,1,0,0,2,1,0,0,chickenFamily
+elephant,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,aardvarkFamily
+flamingo,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,1,chickenFamily
+flea,0,0,1,0,0,0,0,0,0,1,0,0,6,0,0,0,fleaFamily
+frog,0,0,1,0,0,1,1,1,1,1,0,0,4,0,0,0,frogFamily
+frog,0,0,1,0,0,1,1,1,1,1,1,0,4,0,0,0,frogFamily
+fruitbat,1,0,0,1,1,0,0,1,1,1,0,0,2,1,0,0,aardvarkFamily
+giraffe,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,aardvarkFamily
+girl,1,0,0,1,0,0,1,1,1,1,0,0,2,0,1,1,aardvarkFamily
+gnat,0,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,fleaFamily
+goat,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,aardvarkFamily
+gorilla,1,0,0,1,0,0,0,1,1,1,0,0,2,0,0,1,aardvarkFamily
+gull,0,1,1,0,1,1,1,0,1,1,0,0,2,1,0,0,chickenFamily
+haddock,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,bassFamily
+hamster,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,0,aardvarkFamily
+hare,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,0,aardvarkFamily
+hawk,0,1,1,0,1,0,1,0,1,1,0,0,2,1,0,0,chickenFamily
+herring,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,bassFamily
+honeybee,1,0,1,0,1,0,0,0,0,1,1,0,6,0,1,0,fleaFamily
+housefly,1,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,fleaFamily
+kiwi,0,1,1,0,0,0,1,0,1,1,0,0,2,1,0,0,chickenFamily
+ladybird,0,0,1,0,1,0,1,0,0,1,0,0,6,0,0,0,fleaFamily
+lark,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,chickenFamily
+leopard,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+lion,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+lobster,0,0,1,0,0,1,1,0,0,0,0,0,6,0,0,0,clamFamily
+lynx,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+mink,1,0,0,1,0,1,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+mole,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,0,aardvarkFamily
+mongoose,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+moth,1,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,fleaFamily
+newt,0,0,1,0,0,1,1,1,1,1,0,0,4,1,0,0,frogFamily
+octopus,0,0,1,0,0,1,1,0,0,0,0,0,8,0,0,1,clamFamily
+opossum,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,0,aardvarkFamily
+oryx,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,1,aardvarkFamily
+ostrich,0,1,1,0,0,0,0,0,1,1,0,0,2,1,0,1,chickenFamily
+parakeet,0,1,1,0,1,0,0,0,1,1,0,0,2,1,1,0,chickenFamily
+penguin,0,1,1,0,0,1,1,0,1,1,0,0,2,1,0,1,chickenFamily
+pheasant,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,chickenFamily
+pike,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,bassFamily
+piranha,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,0,bassFamily
+pitviper,0,0,1,0,0,0,1,1,1,1,1,0,0,1,0,0,pitviperFamily
+platypus,1,0,1,1,0,1,1,0,1,1,0,0,4,1,0,1,aardvarkFamily
+polecat,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+pony,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,aardvarkFamily
+porpoise,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,1,aardvarkFamily
+puma,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+pussycat,1,0,0,1,0,0,1,1,1,1,0,0,4,1,1,1,aardvarkFamily
+raccoon,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+reindeer,1,0,0,1,0,0,0,1,1,1,0,0,4,1,1,1,aardvarkFamily
+rhea,0,1,1,0,0,0,1,0,1,1,0,0,2,1,0,1,chickenFamily
+scorpion,0,0,0,0,0,0,1,0,0,1,1,0,8,1,0,0,clamFamily
+seahorse,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,bassFamily
+seal,1,0,0,1,0,1,1,1,1,1,0,1,0,0,0,1,aardvarkFamily
+sealion,1,0,0,1,0,1,1,1,1,1,0,1,2,1,0,1,aardvarkFamily
+seasnake,0,0,0,0,0,1,1,1,1,0,1,0,0,1,0,0,pitviperFamily
+seawasp,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,clamFamily
+skimmer,0,1,1,0,1,1,1,0,1,1,0,0,2,1,0,0,chickenFamily
+skua,0,1,1,0,1,1,1,0,1,1,0,0,2,1,0,0,chickenFamily
+slowworm,0,0,1,0,0,0,1,1,1,1,0,0,0,1,0,0,pitviperFamily
+slug,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,clamFamily
+sole,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,bassFamily
+sparrow,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,chickenFamily
+squirrel,1,0,0,1,0,0,0,1,1,1,0,0,2,1,0,0,aardvarkFamily
+starfish,0,0,1,0,0,1,1,0,0,0,0,0,5,0,0,0,clamFamily
+stingray,0,0,1,0,0,1,1,1,1,0,1,1,0,1,0,1,bassFamily
+swan,0,1,1,0,1,1,0,0,1,1,0,0,2,1,0,1,chickenFamily
+termite,0,0,1,0,0,0,0,0,0,1,0,0,6,0,0,0,fleaFamily
+toad,0,0,1,0,0,1,0,1,1,1,0,0,4,0,0,0,frogFamily
+tortoise,0,0,1,0,0,0,0,0,1,1,0,0,4,1,0,1,pitviperFamily
+tuatara,0,0,1,0,0,0,1,1,1,1,0,0,4,1,0,0,pitviperFamily
+tuna,0,0,1,0,0,1,1,1,1,0,0,1,0,1,0,1,bassFamily
+vampire,1,0,0,1,1,0,0,1,1,1,0,0,2,1,0,0,aardvarkFamily
+vole,1,0,0,1,0,0,0,1,1,1,0,0,4,1,0,0,aardvarkFamily
+vulture,0,1,1,0,1,0,1,0,1,1,0,0,2,1,0,1,chickenFamily
+wallaby,1,0,0,1,0,0,0,1,1,1,0,0,2,1,0,1,aardvarkFamily
+wasp,1,0,1,0,1,0,0,0,0,1,1,0,6,0,0,0,fleaFamily
+wolf,1,0,0,1,0,0,1,1,1,1,0,0,4,1,0,1,aardvarkFamily
+worm,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,clamFamily
+wren,0,1,1,0,1,0,0,0,1,1,0,0,2,1,0,0,chickenFamily

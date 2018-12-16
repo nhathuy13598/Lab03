@@ -1,0 +1,93 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.Id3 
+Relation:     Zoo-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    101
+Attributes:   17
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              type
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Id3
+
+
+legs = 0
+|  fins = 0
+|  |  toothed = 0: clamFamily
+|  |  toothed = 1: pitviperFamily
+|  fins = 1
+|  |  eggs = 0: aardvarkFamily
+|  |  eggs = 1: bassFamily
+legs = 2
+|  hair = 0: chickenFamily
+|  hair = 1: aardvarkFamily
+legs = 4
+|  hair = 0
+|  |  aquatic = 0: pitviperFamily
+|  |  aquatic = 1
+|  |  |  toothed = 0: clamFamily
+|  |  |  toothed = 1: frogFamily
+|  hair = 1: aardvarkFamily
+legs = 5: clamFamily
+legs = 6
+|  aquatic = 0: fleaFamily
+|  aquatic = 1: clamFamily
+legs = 8: clamFamily
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         101              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              101     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     aardvarkFamily
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     bassFamily
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     chickenFamily
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     clamFamily
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     frogFamily
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     fleaFamily
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     pitviperFamily
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 41  0  0  0  0  0  0 |  a = aardvarkFamily
+  0 13  0  0  0  0  0 |  b = bassFamily
+  0  0 20  0  0  0  0 |  c = chickenFamily
+  0  0  0 10  0  0  0 |  d = clamFamily
+  0  0  0  0  4  0  0 |  e = frogFamily
+  0  0  0  0  0  8  0 |  f = fleaFamily
+  0  0  0  0  0  0  5 |  g = pitviperFamily
+

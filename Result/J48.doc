@@ -1,0 +1,99 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Zoo-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    101
+Attributes:   17
+              hair
+              feathers
+              eggs
+              milk
+              airborne
+              aquatic
+              predator
+              toothed
+              backbone
+              breathes
+              venomous
+              fins
+              legs
+              tail
+              domestic
+              catsize
+              type
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+feathers = 0
+|   milk = 0
+|   |   backbone = 0
+|   |   |   airborne = 0
+|   |   |   |   predator = 0
+|   |   |   |   |   legs = 0: clamFamily (2.0)
+|   |   |   |   |   legs = 2: clamFamily (0.0)
+|   |   |   |   |   legs = 4: clamFamily (0.0)
+|   |   |   |   |   legs = 5: clamFamily (0.0)
+|   |   |   |   |   legs = 6: fleaFamily (2.0)
+|   |   |   |   |   legs = 8: clamFamily (0.0)
+|   |   |   |   predator = 1: clamFamily (8.0)
+|   |   |   airborne = 1: fleaFamily (6.0)
+|   |   backbone = 1
+|   |   |   fins = 0
+|   |   |   |   tail = 0: frogFamily (3.0)
+|   |   |   |   tail = 1: pitviperFamily (6.0/1.0)
+|   |   |   fins = 1: bassFamily (13.0)
+|   milk = 1: aardvarkFamily (41.0)
+feathers = 1: chickenFamily (20.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	21
+
+
+Time taken to build model: 0.06 seconds
+
+=== Predictions on test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:? 1:aardvarkFamily       1 
+        2        1:? 3:chickenFamily       1 
+        3        1:? 7:pitviperFamily       0.833 
+        4        1:? 2:bassFamily       1 
+        5        1:? 7:pitviperFamily       0.833 
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                  5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         aardvarkFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         bassFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         chickenFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         clamFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         frogFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         fleaFamily
+                 ?        ?        ?          ?        ?          ?        ?         ?         pitviperFamily
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+=== Confusion Matrix ===
+
+ a b c d e f g   <-- classified as
+ 0 0 0 0 0 0 0 | a = aardvarkFamily
+ 0 0 0 0 0 0 0 | b = bassFamily
+ 0 0 0 0 0 0 0 | c = chickenFamily
+ 0 0 0 0 0 0 0 | d = clamFamily
+ 0 0 0 0 0 0 0 | e = frogFamily
+ 0 0 0 0 0 0 0 | f = fleaFamily
+ 0 0 0 0 0 0 0 | g = pitviperFamily
+
